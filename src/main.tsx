@@ -12,6 +12,7 @@ import ContentView from './views/ContentView.tsx'
 import { ChakraProvider } from "@chakra-ui/react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import ContentFormView from './views/ContentFormView.tsx'
+import ArchiveAccordion from './views/ArchiveView.tsx'
 
 const queryClient = new QueryClient();
 
@@ -22,7 +23,7 @@ const router = createBrowserRouter(
             <Route path="content/:contentId" element={<ContentView/>}/>
             <Route path="updatecontent/:contentId" element={<ContentFormView/>}/>
             <Route path="createcontent" element={<ContentFormView/>}/>
-
+            <Route path="viewarchive/:contentId" element={<ArchiveAccordion/>}/>
         </Route>
     ))
 
