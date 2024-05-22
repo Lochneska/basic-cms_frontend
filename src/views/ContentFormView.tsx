@@ -55,7 +55,7 @@ export default function ContentFormView() {
     const {data, isLoading} = useQuery({
         enabled: !!contentId,
         queryFn: () => fetchData(),
-        queryKey: ["links"],
+        queryKey: ["content"],
     });
 
     console.log(data)
@@ -145,7 +145,7 @@ export default function ContentFormView() {
             <Fade in={alertVisible}>
                 <Alert status="success">
                     <AlertIcon/>
-                    Link has been saved.
+                    Content has been sucessfully saved.
                 </Alert>
             </Fade>
         </Box>

@@ -40,11 +40,11 @@ function MainView() {
     return (
         <Container>
             <Center>
-                <Heading>Currently stored links:</Heading>
+                <Heading>Currently stored content:</Heading>
             </Center>
             <Center>
                 <a href="/createcontent">
-                    <Button mr="0.5rem">Create a new link</Button>
+                    <Button mr="0.5rem">Create new content</Button>
                 </a>
             </Center>
             {data?.map((data: ContentData) => {
