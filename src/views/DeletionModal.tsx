@@ -20,7 +20,7 @@ function DeletionModal({ contentId }: { contentId: string}) {
         }).then((response) => {
             if (response.status === 200) {
                 onClose();
-                window.location.reload();
+                window.location.href = '/';
             }
         });
     }
