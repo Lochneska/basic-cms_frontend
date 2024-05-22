@@ -11,6 +11,7 @@ import {
     Button,
 } from "@chakra-ui/react";
 import { ContentData } from "../models/ContentData.tsx";
+import DeletionModal from "./DeletionModal.tsx";
 
 
 async function fetchData() {
@@ -64,6 +65,7 @@ function MainView() {
                                     <a href={"/updatecontent/" + data.id}>
                                         <Button mr="0.5rem">Update</Button>
                                     </a>
+                                    <DeletionModal contentId={data.id + ''}/>
                                 </Td>
                             </Tr>
                         </Tbody>
