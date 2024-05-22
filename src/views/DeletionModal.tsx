@@ -27,7 +27,7 @@ function DeletionModal({ contentId }: { contentId: string}) {
 
     return (
         <>
-            <Button onClick={onOpen}>
+            <Button colorScheme='red' onClick={onOpen}>
                 Delete
             </Button>
             <Modal finalFocusRef={finalRef} isOpen={isOpen} onClose={onClose}>
