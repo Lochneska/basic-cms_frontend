@@ -121,9 +121,9 @@ export default function ContentFormView() {
             <a href="/">
                 <Button mb="0.5rem">Return to main page</Button>
             </a>
-            <a href={"/viewarchive/" + data.id}>
+            {contentId && <a href={"/viewarchive/" + data.id}>
                 <Button mb="0.5rem">View Archive</Button>
-            </a>
+            </a>}
             <FormProvider {...methods}>
                 <form onSubmit={onSubmit}>
                     <Input
