@@ -39,7 +39,7 @@ function DeletionModal({ contentId }: { contentId: string}) {
                         <p>Are you sure you want to delete this content?</p>
                     </ModalBody>
                     <ModalFooter>
-                        <Button colorScheme="green" mr={3} onClick={onClose}>
+                        <Button colorScheme="green" onClick={onClose}>
                             Close
                         </Button>
                         <Button onClick={() => deleteContent(contentId)} colorScheme="red">Delete</Button>

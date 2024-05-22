@@ -13,6 +13,8 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import ContentFormView from './views/ContentFormView.tsx'
 import ArchiveAccordion from './views/ArchiveView.tsx'
+import './style.css';
+
 
 const queryClient = new QueryClient();
 

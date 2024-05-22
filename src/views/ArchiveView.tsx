@@ -19,7 +19,6 @@ import {
 import {useParams} from "react-router-dom";
 import { ContentData } from "../models/ContentData";
 
-
 export default function ArchiveAccordion() {
 
     const { contentId } = useParams();
@@ -50,7 +49,7 @@ export default function ArchiveAccordion() {
     return (
         <Container>
             <Center>
-            <a href={"/updatecontent/"+contentId}><Button m="0.5rem">Return to editing</Button></a>
+            <a href={"/updatecontent/"+contentId}><Button>Return to editing</Button></a>
             </Center>
             {data?.map((data:ContentData) => {
                 return (

@@ -45,7 +45,7 @@ function MainView() {
             </Center>
             <Center>
                 <a href="/createcontent">
-                    <Button mr="0.5rem">Create new content</Button>
+                    <Button>Create new content</Button>
                 </a>
             </Center>
             {data?.map((data: ContentData) => {
@@ -60,10 +60,10 @@ function MainView() {
                                 <Td>Actions: </Td>
                                 <Td>
                                     <a href={"/content/" + data.id}>
-                                        <Button mr="0.5rem">View</Button>
+                                        <Button>View</Button>
                                     </a>
                                     <a href={"/updatecontent/" + data.id}>
-                                        <Button mr="0.5rem">Update</Button>
+                                        <Button>Update</Button>
                                     </a>
                                     <DeletionModal contentId={data.id + ''}/>
                                 </Td>
