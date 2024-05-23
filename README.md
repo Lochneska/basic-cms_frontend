@@ -16,7 +16,7 @@ Animated loading screen:
 Main page:
 ![Main page](https://ctrlv.link/shots/2024/05/23/3Y8Z.png)
 
-Content form with wyswiwyg editor:  
+Content form with wysiwyg editor:  
 a) When creating
 ![Content form with wysiwyg editor](https://ctrlv.link/shots/2024/05/23/nU6i.png)
 b) When updating
